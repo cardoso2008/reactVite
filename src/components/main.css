@@ -1,0 +1,100 @@
+.main-content {
+    flex-grow: 1; /* Faz o main ocupar o espaço restante */
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .hero-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #222831; /* Um cinza mais escuro para esta seção */
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  .hero-section h2 {
+    color: #3282B8; /* Azul Cerúleo */
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+  }
+  
+  .cta-button {
+    background-color: #3282B8; /* Azul Cerúleo */
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0F4C75; /* Azul Petróleo Escuro */
+  }
+  
+  .featured-games {
+    padding: 2rem 0;
+  }
+  
+  .featured-games h3 {
+    color: #3282B8; /* Azul Cerúleo */
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .game-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .game-card {
+    background-color: #0F4C75; /* Azul Petróleo Escuro */
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .game-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .game-card h4 {
+    color: #BBE1FA; /* Azul Claro */
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+  }
+  
+  .game-card p {
+    font-size: 0.95rem;
+    color: #EEEEEE;
+  }
+  
+  /* Responsividade básica para o Main */
+  @media (max-width: 768px) {
+    .hero-section h2 {
+      font-size: 2rem;
+    }
+    .hero-section p {
+      font-size: 1rem;
+    }
+    .featured-games h3 {
+      font-size: 1.8rem;
+    }
+    .game-cards {
+      grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
+    }
+  }
